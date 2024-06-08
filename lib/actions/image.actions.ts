@@ -146,7 +146,7 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       savedImages,
     }
   } catch (error) {
-    handleError(error)
+    // handleError(error)
   }
 }
 

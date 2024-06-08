@@ -13,7 +13,7 @@ const IBMPlex = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   title: "Pollie",
-  description: "AI-powered image generator",
+  description: "The only surveying tool you need!",
 };
 
 export default function RootLayout({

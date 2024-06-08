@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { connectToDatabase } from "../database/mongoose";
 import { handleError } from "../utils";
 import User from "../database/models/user.model";
-import Image from "../database/models/image.model";
+import Image from "../database/models/survey.model";
 import { redirect } from "next/navigation";
 
 import { v2 as cloudinary } from 'cloudinary'
@@ -108,7 +108,7 @@ export async function getAllImages({ limit = 9, page = 1, searchQuery = '' }: {
       secure: true,
     })
 
-    let expression = 'folder=imaginify';
+    let expression = 'folder=pollie';
 
     if (searchQuery) {
       expression += ` AND ${searchQuery}`
